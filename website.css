@@ -1,0 +1,1012 @@
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Css Variables */
+:root{
+    --green:green;
+    --orange:orangered;
+    --white:white;
+    --font_size:20px;
+    --font-style:italic;
+}
+/* Overall body */
+body
+{
+    background-color: black;
+}
+/* Navigation Bar */
+.div1
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+/* Logo images */
+.item1 img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+/* Menu Items */
+.item2
+{
+    display: flex;
+    gap:20px;
+    font-weight: bold;
+    font-size:var(--font_size) ;
+}
+/* Home About All Products contact Design */
+.item2 p
+{
+    padding:10px;
+    text-shadow: 1px 1px 2px red,-1px -1px 2px red,-1px 1px 2px red,1px -1px 2px red;
+}
+/* Menu Items Hover */
+.item2 p:hover
+{
+    background-color: var(--white);
+    cursor: pointer;
+}
+/* Home About All Products contact anchor tag design */
+.item2 a
+{
+    text-decoration: none;
+    color: var(--white);
+}
+/* anchor tag hover */
+.item2 a:hover
+{
+    color:var(--green);
+    cursor: pointer;
+    text-shadow: none;
+}
+/* Input and Bar Icon  */
+.div1 .bar,#menu
+{
+    display: none;
+} 
+/* Home Page */
+.div2
+{
+    color:var(--white);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: img;
+    animation-timing-function:linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: -1;
+    transition:2s;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+} 
+/* Home Page Image Animation */
+@keyframes img {
+    0%
+    {
+        background-image: url(./farm4.jpg);
+    }
+    20%
+    {
+        background-image: url(./home1.jpg);    
+    }
+    40%
+    {
+        background-image: url(./home2.png);    
+    }
+    60%
+    {
+        background-image: url(./home3.jpg);    
+    }
+    80%
+    {
+        background-image: url(./home6.jpg);   
+    }
+    100%
+    {
+        background-image: url(./home5.jpg);  
+    }    
+}
+/* Home Page Center Div */
+.div2 .item3
+{
+    width: 500px;
+    min-height: 300px;
+    font-size: var(--font_size);
+    line-height: 30px;
+    padding: 20px;
+}
+.item3 h3
+{
+    color:var(--green);
+    text-shadow: 1px 1px 1px white;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.item3 h1
+{
+    color:var(--orange);
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: none;
+}
+.item3 button
+{
+    background-color:var(--orange);
+    color:var(--text);
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+}
+/* Organic Farming Services Page */
+.div3
+{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding:30px;
+    background-color: var(--green);
+    color:var(--white);
+}
+/* Organic Farm Working Overall Div */
+.div3 .box1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10PX;
+}
+/* Organic Farm Working Div's */
+.box1 div
+{
+    width: 300px;
+    min-height: 300px;
+    background-color: var(--white);
+    padding: 20PX 10px ;
+    color:black;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.box1 .item5
+{
+    line-height: 30px;
+}
+.item5 i
+{
+    color:var(--green);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.box1 .item4
+{
+    background-image: url(./animal1.jpg);   
+}
+.box1 .item6
+{
+    background-image: url(./fruits1.jpg);
+}
+.box1 .item7
+{
+    background-image: url(./organic\ veg.jpg);
+}
+/* Organic Farm Div4 */
+.div4
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./farm_tomato.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 10px;
+}
+/* Div4 Center Div */
+.div4 .item8
+{
+    width: 500px;
+    min-height: 300px;
+    line-height: 30px;
+    font-size: var(--font_size);
+    padding: 30px 20px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+.item8 h3
+{
+    color:var(--green);
+    text-shadow: 1px 1px 1px white;
+    padding-bottom: 5px;
+}
+.item8 h1
+{
+    color:var(--orange);
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: none;
+}
+.item8 button
+{
+    background-color:orangered;
+    color:var(--white);
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+}
+button:hover
+{
+    background-color: green;
+}
+/* Organic Products Div5 */
+.div5
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-color: var(--green);
+    flex-wrap: wrap;
+    padding: 10px;
+}
+/* Vegtables, Fruits and leaves Div */
+.div5 div
+{
+    width: 300px;
+    min-height: 500px;
+    text-align: center;
+    line-height: 30px;
+    padding:30px 20px;
+    background-color: var(--white);
+    border-radius: 30px;
+}
+.div5 div img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.div5 div img:hover
+{
+    width: 220px;
+    height: 220px;
+}
+/* Shop Now Button */
+.div5 button
+{
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+    background-color:var(--orange);
+    color:white;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+.div5 button:hover
+{
+    background-color:var(--green);
+}
+/* Our Products Overall Div */
+.div6
+{
+    text-align: center;
+    background-color: white;
+}
+/* Offer Div */
+.div6 .item9
+{
+    min-height: 50px;
+    background-color: black;
+    color:var(--white);  
+    padding: 5px;
+    word-spacing: 5px;
+    text-align: center;
+}
+.div6 button
+{
+    padding: 10px;
+    color:var(--white);
+    background-color: var(--green);
+    border-radius: 20px;
+    border: none;
+}
+/* Our Product Heading */
+h1{
+    padding-top: 20px;
+}
+/* Product Menu */
+.div6 .item10
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    color:black;
+    flex-wrap: wrap;
+}
+.item10 a
+{
+    text-decoration: none;
+    color:black
+}
+.item10 a:hover{
+    color:white;
+    cursor: pointer;
+}
+.div6 .item10 h2
+{
+    width: 200px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.item10 h2:hover
+{
+    border: 2px solid green;
+    background-color:var(--green);
+    cursor: pointer;
+}
+.box2 img
+{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Fruits, vegtables,salad Leaves Overall div */
+.box2
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap:10px;
+}
+/* Triangle Arrow Overall div */
+.f
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+/* Arrow */
+.f i
+{
+    font-size:40px;
+}
+.f a
+{
+    text-decoration: none;
+    color:var(--green);
+}
+/* Fruits, vegtables,Leaves Div */
+.box2 .f .fruits,.vegtables,.leaves
+{
+    width:830px;
+    display: flex;
+    gap:35px;
+    padding: 10px;
+    overflow: auto;
+}
+.fruits div,.vegtables div,.leaves div 
+{
+    box-shadow: 1px 1px 2px 2px gray;
+    line-height: 25px;
+    padding: 20px;
+    border-radius:50px 50px 0px 0px;
+}
+/* shopping Cart vehicle icon */
+.f .ic{
+    font-size: 20px;
+    color: var(--green);
+}
+.f .fa-star
+{
+    color:var(--green);
+    font-size: 15px;
+}
+.f h1
+{
+    color:white;
+    text-shadow: 1px 1px 5px red,-1px 1px 5px red,1px -1px 5px red,-1px -1px 5px red;
+}
+/* Heart Icon */
+.f .ih
+{
+    font-size:20px;
+    color:red;
+}
+.fruits::-webkit-scrollbar
+{
+    display: none;
+}
+.vegtables::-webkit-scrollbar
+{
+    display: none;
+}
+.leaves::-webkit-scrollbar
+{
+    display: none;
+}
+.box2 img:hover
+{
+     transform: scale(0.8);
+     transition: 0.5s;
+}
+/* Rate */
+.box2 h3
+{
+    color:red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Buy Now Button */
+.box2 button
+{
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+}
+.box2 button a
+{
+    text-decoration: none;
+    color:var(--white);
+}
+.box2 button:hover
+{
+    background-color:var(--orange);
+}
+/* Product Delivery Details */
+.box3
+{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    color:var(--white);
+    background-color: black;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 10px;
+}
+.box3 .item11
+{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+    background-color: #3d3c3a;
+    padding: 10px;
+}
+.box3 .item11 i
+{
+    color:var(--green);
+    font-size: 30px;
+}
+/* About Organic Farm */
+/* Overall Div */
+.box4
+{
+    min-height: 100vh;
+    display: flex;
+    background-image: linear-gradient(lightgreen,green,darkgreen);
+    padding: 10px;
+}
+/* Box4 First Child */
+.box4 .item12
+{
+    width: 30%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--green); */
+    min-height: 100vh;
+}
+/* box4-First Child-First Child */
+.box4 .item12 .organic
+{
+    width: 500px;
+    min-height: 350px;
+    line-height: 30px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 3px black;
+}
+.item12 .organic h3
+{
+    color:var(--green);
+    padding-left: 50px;
+}
+.item12 .organic h1
+{
+    color:var(--orange);
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: none;
+}
+.item12 .organic button
+{
+    background-color:var(--orange);
+    color:var(--white);
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+}
+.item12 .organic button:hover
+{
+    background-color: var(--green);
+}
+/* box4 Second Child */
+.box4 .item13
+{
+    width: 70%;
+    min-height: 100vh;
+    background-image: url(./f6.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+}
+/* Review Overall Box */
+.div7
+{
+    min-height: 100vh;
+    text-align: center;
+    background-color:var(--white);
+    background-image: url(./leaf1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+ h1
+{
+    color:var(--white);
+    text-shadow: 1px 1px 5px red,-1px 1px 5px red,1px -1px 5px red,-1px -1px 5px red;
+}
+/* div7 First child */
+.box5
+{
+    min-height: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap:30px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+/* Review Div's */
+.box5 .item14,.item15,.item16
+{
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 1px 1px 2px 3px darkgray;
+    line-height: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    color:var(--white);
+}
+/* first-child & last-child Icon */
+.box5 .item14 i,.item16 i
+{
+    color:red;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* box5 Second Child */
+.box5 .item15
+{
+    min-height: 350px;
+    color:var(--white);
+    background-image: url(./review1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.item15 h1
+{
+    text-shadow: none;
+}
+/* Second Child Button */
+.box5 .item15 button
+{
+    background-color:var(--green);
+    color:var(--white);
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+}
+.item15 button:hover
+{
+    background-color:var(--orange);
+}
+/* first-child & last-child profile */
+.box5 img
+{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.box5 .review
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* Footer */
+.item17
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color:var(--white);
+    flex-wrap: wrap;
+}
+/* Footer Grand Child */
+.item17 div
+{
+    width: 300px;
+    min-height: 200px;
+    line-height: 40px;
+}
+/* Contact Icons */
+.item17 .box6 i
+{
+    margin: 10px;
+    transition: 1s;
+}
+.box6 i:hover
+{
+    cursor: pointer;
+    transform: rotate(50deg);
+}
+/* Email  */
+.item17 .box6 input
+{
+     padding: 8px 20px;
+}
+/* Send Icon */
+.item17 .box6 span
+{
+    padding: 8px;
+    background-color: var(--green);
+}
+/* copy Right Div */
+footer .box7
+{
+    text-align: center;
+    color:var(--white);
+    padding: 10px;
+    background-color: var(--green);
+}
+/* Login Page */
+/* Overall box */
+.overall
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size:16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.overall .image,.login
+{
+    height: 620px;
+}
+/* Image */
+.overall .image
+{
+    width: 850px;
+    background-image: url(./login1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* Login design */
+.overall .login
+{
+    width: 400px;
+    padding:10px 20px;
+    line-height: 30px;
+    background-color: rgba(255,255,255,0);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation-name: log;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+@keyframes log {
+    0%{
+        transition: 1s;
+        border: 2px solid black;
+        transition-delay: 1s;
+    }
+    25%
+    {
+        transition: 1s;
+        border-top: 2px solid blue;
+        border-right:2px solid #ff00ff;
+        border-bottom:2px solid blue;
+        border-left: 2px solid #ff00ff;
+        transition-delay: 1s;
+    }
+    50%
+    {
+        transition: 1s;
+        border-top: 2px solid #ff00ff;
+        border-right:2px solid blue;
+        border-bottom:2px solid #ff00ff;
+        border-left: 2px solid blue;
+        transition-delay: 1s;
+    }
+    75%
+    {
+        transition: 1s;
+        border-top: 2px solid blue;
+        border-right:2px solid #ff00ff;
+        border-bottom:2px solid blue;
+        border-left: 2px solid #ff00ff;
+        transition-delay: 1s;
+    }
+    100%
+    {
+        transition: 1s;
+        border-top: 2px solid #ff00ff;
+        border-right:2px solid blue;
+        border-bottom:2px solid #ff00ff;
+        border-left: 2px solid blue;
+        transition-delay: 1s;
+    }
+    
+}
+.overall .login h1
+{
+    text-align: center;
+}
+.overall .login h3
+{
+    color:var(--white);
+}
+/* Input design */
+.overall .login .pd
+{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 30px 10px 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: rgba(255,255,255,0);
+    color:white;
+}
+.overall .login label,.c
+{
+    color:var(--green);
+    font-weight: bold;
+}
+/* Payment method */
+.login .cash
+{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Login page Button */
+.overall .b
+{
+    display: flex;
+    gap:20px;
+}
+
+.login button
+{
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.login button:hover
+{
+    background-color: var(--green);
+}
+/* Success Page */
+.sus{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    background-color: var(--white);
+}
+/* Order Confirmed Page */
+.sus .order
+{
+    width: 250px;
+    height: 250px;
+    background-color: var(--green);
+    border-radius: 50%;
+    animation-name: tick;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    transition: 1s;
+}
+@keyframes tick {
+    from{
+
+    }
+    to{
+        background-image: url(./tick_icon.png);
+        background-position: center;
+        background-size: cover;
+    }
+}
+.sus .con
+{
+    color:var(--green);
+    text-shadow: unset;
+}
+/* Back to Home Button */
+.sus button
+{
+    padding: 10px 20px;
+    background-color: var(--green);
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.sus button:hover
+{
+    background-color: var(--orange);
+}
+/* Mobile Screen Media Query */
+@media screen and (min-width:300px) and (max-width:800px)
+ {
+    /* Navigation Bar */
+    .div1
+    {
+        font-size:var(--font_size);
+    }
+    /* Menu Items */
+    .item2
+    {
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        padding: 25px 0px 0px;
+        left:-800px;
+        width:320px;
+        top:90px;
+        height: 100vh;
+        background-color:var(--green);
+        align-items: center;
+        transition: 1s;
+        font-size: 25px;
+    }
+    /* Input and Bar Icon */
+    input:checked~.item2
+    {
+        left: 0px;
+    }
+    .div1 .bar
+    {
+        display: block;
+        color: var(--white);
+    }
+    /* Our Products Overall div */
+    .box2 .f
+    {
+        width: 100%;
+        gap:unset;
+    }
+    /* Our Products Div */
+    .box2 .fruits,.vegtables,.leaves
+    {
+    width:100%;
+    border: 2px solid black;
+    padding: 10px;
+    overflow: auto;
+    }
+    /* About Products */
+    .box4
+    {
+        flex-wrap: wrap-reverse;
+    }
+    .box4 .item12
+    {
+        width: 100%;
+    }
+    .box4 .item13
+    {
+        width: 100%;
+    }
+    /* Login Page */
+    .overall
+    {
+        flex-wrap: wrap;
+    }
+    .overall .image
+    {
+        width: 100%;
+        border-radius: unset;
+    }
+    .overall .login
+    {
+        width:100%;
+        border-radius: unset;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px)
+{
+    /* Our Products Overall Div */
+    .box2 .f
+    {
+        width: 100%;
+    }
+    /* Our Products Div */
+    .box2 .fruits,.vegtables,.leaves
+    {
+    width:100%;
+    border: 2px solid black;
+    padding: 10px;
+    overflow: auto;
+    }
+    /* Login Page */
+    .overall
+    {
+        padding-top: 50px;
+    }
+}
